@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login_register.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <article form="forms">
+        <header form="header" class="singup">
+            <div onclick="changeTab(this)" data-tab="login" class="login-tab">
+                Ingresar
+            </div>
+            <div onclick="changeTab(this)" data-tab="signup" class="signup-tab">
+                Registrar
+            </div>
+        </header>
+        <main form="body" id="form-body">
+            <section id="login" class="login" form="login">
+                <form form="type" id="loginForm" action="http://127.0.0.1:3000/login" method="get">
+                    <div>
+                        <span class="responseGmail"></span>
+                        <label for="gmail">
+                            Gmail
+                            <input required type="email" name="gmail" id="Lgmail">
+                        </label>
+                    </div>
+                    <div>
+                        <span class="responsePass"></span>
+                        <label for="pass">
+                            Contraseña
+                            <input required type="password" name="pass" id="Lpass">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="rem">Remember me
+                            <input type="checkbox" id="rem"/>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Ingresar</button>
+                    </div>
+                    <div>
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </section>
+            <section id="signup" class="signup" form="signup">
+                <form form="type" id="registerForm" action="http://127.0.0.1:3000/register" method="post">
+                    <div>
+                        <span class="responseGmail"></span>
+                        <label for="name">
+                            Nombre
+                            <input required type="text" name="name" id="Rname">
+                        </label>
+                    </div>
+                    <div>
+                        <span class="responseGmail"></span>
+                        <label for="gmail">
+                            Gmail
+                            <input required type="email" name="gmail" id="Rgmail">
+                        </label>
+                    </div>
+                    <div>
+                        <span class="responsePass"></span>
+                        <label for="pass">
+                            Contraseña
+                            <input required type="password" name="pass" id="Rpass">
+                        </label>
+                    </div>
+                    <div>
+                        <span class="responsePass"></span>
+                        <label for="Vpass">
+                            Repita la Contraseña
+                            <input required type="password" name="Vpass" id="RVpass">
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Registrarme</button>
+                    </div>
+                    <div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </article>
+
+    <script src="script/login/login.js"></script>
+</body>
+
+</html>

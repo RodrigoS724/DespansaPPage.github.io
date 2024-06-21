@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/components.css">
+    <link rel="stylesheet" href="/style/store.css">
+    <title>Items</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section navBar="logo">
+                <img src="" alt="logo">
+            </section>
+            <div navBar="searchBar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+                <input type="search" name="search"></input>
+
+                <div navBar="select">
+                    <select name="">
+                        <option value="">Filtrar por tipo</option>
+                        <option value="">Consumibles</option>
+                        <option value="">Frutas y Verduras</option>
+                        <option value="">Higiene</option>
+                        <option value="">Higiene Personal</option>
+                    </select>
+                </div>
+            </div>
+            <ul navBar="buttons">
+                <li><a navBar="button" href="">Nuevo +</a></li>
+                <span></span>
+                <li><a navBar="button" href="">Ingresar</a></li>
+                <li><a navBar="button" href="">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cardContainer" cards="cards">
+            <article cards="newItem">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-plus">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+<script type="module" src="/script/store/script.js"></script>
+
+</html>

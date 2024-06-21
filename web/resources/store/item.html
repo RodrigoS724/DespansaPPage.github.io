@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/script/store/script.js"></script>
+    <link rel="stylesheet" href="/style/components.css">
+    <link rel="stylesheet" href="/style/store.css">
+    <title>Item</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <section navBar="logo">
+                <img src="" alt="logo">
+            </section>
+            <div navBar="searchBar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+                <input type="text">
+            </div>
+            <ul>
+                <li><a navBar="buttons" href="">Ingresar</a></li>
+                <li><a navBar="buttons" href="">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="">Titulo: 
+
+                <input type="text" name="title">
+            </label>
+            <label for="">Imagen:
+                <input type="file" name="photo_url">
+            </label>
+            <h4>type</h4>
+            <h4>brad</h4>
+            <div cards="price&stock">
+                <h4>price:</h4>
+                <h4>stock:
+                    <button>+</button>
+                    <span></span>
+                    <button>-</button>
+                </h4>
+            </div>
+        </form>
+        <article cards="card">
+            <h2>title</h2>
+            <div>
+                <img src="" alt="img">
+            </div>
+            <h4>type</h4>
+            <h4>brad</h4>
+            <div cards="price&stock">
+                <h4>price:</h4>
+                <h4>stock:
+                    <button>+</button>
+                    <span></span>
+                    <button>-</button>
+                </h4>
+            </div>
+            <div cards="buttons">
+                <button>Upgrade</button>
+                <button>Delete</button>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

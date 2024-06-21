@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+header>nav {
+    display: grid;
+    width: 100%;
+    height: 3rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: auto;
+}
+
+main{
+    margin: 5rem auto;
+    width: 90%;
+}
+
+[navBar="logo"] {
+    margin: auto;
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+[navBar="searchBar"] {
+    margin: auto;
+    width: 25rem;
+    border: gray solid 2px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+}
+
+[navBar="searchBar"]:hover {
+    outline: solid 1px;
+}
+
+[navBar="searchBar"]>input {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid wheat;
+    outline: none;
+}
+
+[navBar="searchBar"] svg {
+    margin: 0 5px;
+}
+
+[navBar="select"] {
+    height: 100%;
+    border: none;
+    border-left: 1px gray solid;
+}
+
+[navBar="select"] select {
+    background-color: black;
+    border-radius: 25px;
+    border: none;
+}
+
+[navBar="select"] select::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+[navBar="buttons"] {
+    grid-column: 3;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+[navBar="button"] {
+    display: grid;
+    height: 100%;
+    margin: auto 0;
+    place-items: center;
+    transition: 0.5s;
+}
+
+[navBar="button"]:hover {
+    border-bottom: green solid 2px;
+    color: black;
+    background-color: gray;
+}
